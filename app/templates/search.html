@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block form %}
+
+<h1 class="display-4 p-4">Search the images</h1>
+
+<div class="display-5 p-4">
+    <form action='/search' method='GET' enctype=application/x-www-form-urlencoded>
+
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search" required>
+        </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+
+
+{% endblock %}
